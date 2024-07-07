@@ -1,10 +1,10 @@
 ## SQL Queries
 
-This section contains SQL queries used to analyze the NPS data and generate insights for the dashboard.
+-- This section contains SQL queries used to analyze the NPS data and generate insights for the dashboard.
 
 ### 1. Overall NPS Score
 
-Calculates the overall NPS score as of June 24, 2021.
+-- Calculates the overall NPS score as of June 24, 2021.
 
 SELECT 
     ROUND(
@@ -15,7 +15,7 @@ SELECT
 FROM FACT_NPS_SCORE
 WHERE CREATED_DATE <= '2021-06-24';
 
-Calculates the running view of the NPS score over the past 30 days.
+-- Calculates the running view of the NPS score over the past 30 days.
 
 SELECT 
     DATE_TRUNC('day', CREATED_DATE) AS Date,
@@ -29,7 +29,7 @@ WHERE CREATED_DATE BETWEEN DATEADD(day, -30, '2021-06-24') AND '2021-06-24'
 GROUP BY DATE_TRUNC('day', CREATED_DATE)
 ORDER BY Date;
 
-Filters to review NPS by different customer dimensions such as tier, ARR, and team size.
+-- Filters to review NPS by different customer dimensions such as tier, ARR, and team size.
 
 SELECT 
     c.TIER,
