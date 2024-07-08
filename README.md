@@ -20,3 +20,6 @@ Welcome to the NPS Dashboard Analysis project! This repository contains SQL quer
 - **Key Fields:** `NAME`, `TIER`, `CUSTOMER_SINCE`, `ARR`, `TEAM_SIZE`
 - **Description:** Contains customer details including tier, annual recurring revenue (ARR), and team size.
 
+## Tableau Dashboard
+https://public.tableau.com/app/profile/mtummino/viz/ExampleDashboardNPSAnalysis/ExampleDashboardNPSAnalysis
+
